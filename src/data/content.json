@@ -1,34 +1,45 @@
 {
   "meta": {
-    "title": "Çelikoğulları Sebze & Meyve | Toptan ve Perakende",
-    "description": "Manavgat bölgesinde otel ve restoranlar için günlük taze sebze meyve tedariği."
+    "title": "BrandName | Kurumsal Çözüm Ortağınız",
+    "description": "İşletmeniz için en iyi dijital çözümler ve profesyonel hizmetler."
   },
   "general": {
-    "brandName": "Çelikoğulları",
-    "whatsappNumber": "905000000000",
-    "address": "Ilıca, 07600 Manavgat/Antalya"
+    "brandName": "BrandName",
+    "whatsappNumber": "905555555555",
+    "phone": "+90 (555) 000 00 00",
+    "email": "info@brandname.com",
+    "address": "Örnek Mahallesi, Teknoloji Caddesi No:1, 34000 Şehir/Ülke",
+    "mapEmbed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3009.664402324638!2d28.978358915414844!3d41.00823797929987!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab9e7a7777c43%3A0x4c76cf3dcc8b330d!2sAyasofya!5e0!3m2!1str!2str!4v1631526437542!5m2!1str!2str"
   },
   "hero": {
-    "title": "Topraktan Sofranıza <br><span class='text-primary'>En Taze Lezzetler</span>",
-    "subtitle": "Manavgat'ın en güvenilir sebze ve meyve toptancısı. Otel, restoran ve işletmeniz için günlük teslimat.",
-    "ctaText": "Ürünleri İncele",
-    "ctaLink": "#products"
+    "title": "İşletmeniz İçin <br><span class='text-primary'>Yenilikçi Çözümler</span>",
+    "subtitle": "Müşterilerinize en iyi deneyimi sunmak için modern, hızlı ve güvenilir altyapımızı keşfedin. Sizin için buradayız.",
+    "ctaText": "Hizmetleri Keşfet",
+    "ctaLink": "#services"
   },
-  "features": [
-    {
-      "icon": "🚚",
-      "title": "Hızlı Teslimat",
-      "description": "Siparişleriniz aynı gün kapınızda."
-    },
-    {
-      "icon": "🥦",
-      "title": "Günlük Taze",
-      "description": "Her sabah halden seçilen taptaze ürünler."
-    },
-    {
-      "icon": "💎",
-      "title": "Toptan Fiyat",
-      "description": "İşletmelere özel rekabetçi fiyat avantajı."
-    }
-  ]
+  "services": {
+    "title": "Neler Sunuyoruz?",
+    "subtitle": "İhtiyaçlarınıza özel profesyonel hizmet paketlerimiz.",
+    "items": [
+      {
+        "icon": "🚀",
+        "title": "Hızlı Entegrasyon",
+        "desc": "Mevcut sistemlerinize tam uyumlu, kurulum gerektirmeyen hızlı çözümler."
+      },
+      {
+        "icon": "🛡️",
+        "title": "Güvenli Altyapı",
+        "desc": "Verileriniz endüstri standartlarında şifrelenir ve güvenle saklanır."
+      },
+      {
+        "icon": "💡",
+        "title": "Yaratıcı Stratejiler",
+        "desc": "Markanızı öne çıkaracak modern tasarım ve pazarlama stratejileri."
+      }
+    ]
+  },
+  "contact": {
+    "title": "İletişime Geçin",
+    "subtitle": "Projeleriniz veya sorularınız için bize ulaşmaktan çekinmeyin."
+  }
 }
