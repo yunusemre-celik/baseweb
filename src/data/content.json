@@ -1,0 +1,34 @@
+{
+  "meta": {
+    "title": "Çelikoğulları Sebze & Meyve | Toptan ve Perakende",
+    "description": "Manavgat bölgesinde otel ve restoranlar için günlük taze sebze meyve tedariği."
+  },
+  "general": {
+    "brandName": "Çelikoğulları",
+    "whatsappNumber": "905000000000",
+    "address": "Ilıca, 07600 Manavgat/Antalya"
+  },
+  "hero": {
+    "title": "Topraktan Sofranıza <br><span class='text-primary'>En Taze Lezzetler</span>",
+    "subtitle": "Manavgat'ın en güvenilir sebze ve meyve toptancısı. Otel, restoran ve işletmeniz için günlük teslimat.",
+    "ctaText": "Ürünleri İncele",
+    "ctaLink": "#products"
+  },
+  "features": [
+    {
+      "icon": "🚚",
+      "title": "Hızlı Teslimat",
+      "description": "Siparişleriniz aynı gün kapınızda."
+    },
+    {
+      "icon": "🥦",
+      "title": "Günlük Taze",
+      "description": "Her sabah halden seçilen taptaze ürünler."
+    },
+    {
+      "icon": "💎",
+      "title": "Toptan Fiyat",
+      "description": "İşletmelere özel rekabetçi fiyat avantajı."
+    }
+  ]
+}
