@@ -1,42 +1,72 @@
 import '../css/style.css'
 
-// 1. Verileri Çekme Fonksiyonu
 async function loadContent() {
   try {
     const response = await fetch('/src/data/content.json');
     const data = await response.json();
-
     renderPage(data);
   } catch (error) {
-    console.error('Veri yüklenirken hata oluştu:', error);
+    console.error(error);
   }
 }
 
-// 2. Verileri Ekrana Basma Fonksiyonu
 function renderPage(data) {
-  // --- Genel Ayarlar ---
   document.title = data.meta.title;
   document.querySelector('meta[name="description"]').setAttribute("content", data.meta.description);
-  
-  // Marka İsmi (Navbar)
+
   updateElement('brand-name', data.general.brandName);
 
-  // --- Hero Bölümü ---
-  updateElement('hero-title', data.hero.title, true); // true = HTML render et (br tagleri için)
+  updateElement('hero-title', data.hero.title, true);
   updateElement('hero-subtitle', data.hero.subtitle);
-  
+
   const heroCta = document.getElementById('hero-cta');
   if(heroCta) {
     heroCta.innerText = data.hero.ctaText;
     heroCta.href = data.hero.ctaLink;
   }
 
-  // --- WhatsApp Butonu (Level 1 Özellik) ---
-  // Sağ alt köşeye sabit WhatsApp butonu ekleyelim
+  updateElement('services-title', data.services.title);
+  updateElement('services-subtitle', data.services.subtitle);
+
+  const servicesGrid = document.getElementById('services-grid');
+  if (servicesGrid) {
+    servicesGrid.innerHTML = '';
+    data.services.items.forEach(item => {
+      const card = document.createElement('div');
+      card.className = "group relative bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition-all border border-gray-100 hover:border-primary/20";
+      card.innerHTML = `
+        <div class="inline-flex items-center justify-center p-3 bg-primary/10 rounded-xl text-4xl mb-6 group-hover:scale-110 transition-transform">
+          ${item.icon}
+        </div>
+        <h3 class="text-xl font-semibold text-text-main mb-3 group-hover:text-primary transition-colors">
+          ${item.title}
+        </h3>
+        <p class="text-text-muted leading-relaxed">
+          ${item.desc}
+        </p>
+      `;
+      servicesGrid.appendChild(card);
+    });
+  }
+
+  updateElement('contact-title', data.contact.title);
+  updateElement('contact-subtitle', data.contact.subtitle);
+  
+  updateElement('contact-address', data.general.address);
+  updateElement('contact-phone', data.general.phone);
+  updateElement('contact-email', data.general.email);
+
+  const mapFrame = document.getElementById('google-map');
+  if (mapFrame) {
+    mapFrame.src = data.general.mapEmbed;
+  }
+
+  updateElement('footer-brand', data.general.brandName);
+  updateElement('current-year', new Date().getFullYear());
+
   addWhatsAppButton(data.general.whatsappNumber);
 }
 
-// Yardımcı: Element bul ve içeriğini güncelle
 function updateElement(id, content, isHTML = false) {
   const element = document.getElementById(id);
   if (element) {
@@ -45,7 +75,6 @@ function updateElement(id, content, isHTML = false) {
   }
 }
 
-// LEVEL 1: WhatsApp Entegrasyonu
 function addWhatsAppButton(number) {
   const whatsappLink = `https://wa.me/${number}`;
   const btn = document.createElement('a');
@@ -60,5 +89,4 @@ function addWhatsAppButton(number) {
   document.body.appendChild(btn);
 }
 
-// Uygulamayı Başlat
 loadContent();
