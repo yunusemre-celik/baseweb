@@ -5,14 +5,14 @@
 /* THEMA AYARLARI (BURAYI DEĞİŞTİR, SİTE DEĞİŞSİN) */
 :root {
   /* Renk Paleti: Modern Kurumsal Mavi */
-  --color-primary: #2563EB;     /* Ana vurgu rengi (Butonlar, linkler) */
-  --color-secondary: #1E40AF;   /* İkincil renk (Hover durumları) */
-  --color-accent: #F59E0B;      /* Dikkat çekici öğeler (Rozetler vb.) */
+  --color-primary: #008b28;     /* Ana vurgu rengi (Butonlar, linkler) */
+  --color-secondary: #140e13;   /* İkincil renk (Hover durumları) */
+  --color-accent: #f0e800;      /* Dikkat çekici öğeler (Rozetler vb.) */
   
-  --color-background: #F8FAFC;  /* Sayfa arkaplanı */
-  --color-surface: #FFFFFF;     /* Kart/Bölüm arkaplanları */
+  --color-background: #ffffff;  /* Sayfa arkaplanı */
+  --color-surface: #7edaac;     /* Kart/Bölüm arkaplanları */
   
-  --color-text-main: #0F172A;   /* Ana metin rengi */
+  --color-text-main: #000000;   /* Ana metin rengi */
   --color-text-muted: #64748B;  /* Açıklama metinleri */
 
   /* Tipografi */
