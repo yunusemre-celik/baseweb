@@ -4,60 +4,84 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
-    <title>SEKME BAŞLIĞI</title>
-    <meta name="description" content="META AÇIKLAMASI" />
+    <title>Yükleniyor...</title>
+    <meta name="description" content="Site açıklanması yükleniyor..." />
     
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
   </head>
-  <body class="bg-background text-text-main antialiased selection:bg-primary selection:text-white">
+  <body class="bg-background text-text-main antialiased selection:bg-primary selection:text-white overflow-x-hidden">
     
-    <nav class="fixed w-full z-50 top-0 start-0 bg-surface/90 backdrop-blur-md border-b border-gray-200">
+    <nav class="fixed w-full z-50 top-0 start-0 bg-surface/90 backdrop-blur-md border-b border-gray-200 transition-all duration-300">
       <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
-            <span class="self-center text-2xl font-bold whitespace-nowrap text-primary">MarkaLogo</span>
+            <span id="brand-name" class="self-center text-2xl font-bold whitespace-nowrap text-primary">
+              </span>
         </a>
-        <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-            <a href="#contact" class="text-white bg-primary hover:bg-secondary focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center transition-colors duration-300">
-              İletişime Geç
-            </a>
+        
+        <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-text-muted rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200" aria-controls="navbar-default" aria-expanded="false">
+            <span class="sr-only">Menüyü Aç</span>
+            <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+            </svg>
+        </button>
+
+        <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+          <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-transparent">
+            <li>
+              <a href="#hero" class="block py-2 px-3 text-white bg-primary rounded md:bg-transparent md:text-primary md:p-0" aria-current="page">Ana Sayfa</a>
+            </li>
+            <li>
+              <a href="#about" class="block py-2 px-3 text-text-main rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-primary md:p-0">Hakkımızda</a>
+            </li>
+            <li>
+              <a href="#services" class="block py-2 px-3 text-text-main rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-primary md:p-0">Hizmetler</a>
+            </li>
+            <li>
+              <a href="#contact" class="block py-2 px-3 text-text-main rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-primary md:p-0">İletişim</a>
+            </li>
+          </ul>
         </div>
       </div>
     </nav>
 
-    <section id="hero" class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden">
-      <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8 relative z-10">
-        <div class="max-w-2xl mx-auto text-center">
+    <section id="hero" class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden min-h-[90vh] flex items-center">
+      <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8 relative z-10 w-full">
+        <div class="max-w-3xl mx-auto text-center">
           
-          <h1 class="text-4xl font-extrabold tracking-tight text-text-main sm:text-6xl animate-fade-in opacity-0" style="animation-delay: 0.2s;">
-            <span class="block">İşletmeniz İçin</span>
-            <span class="block text-primary">Profesyonel Çözümler</span>
-          </h1>
+          <h1 id="hero-title" class="text-4xl font-extrabold tracking-tight text-text-main sm:text-6xl animate-fade-in opacity-0" style="animation-delay: 0.1s;">
+            </h1>
           
-          <p class="mt-6 text-lg leading-8 text-text-muted animate-fade-in opacity-0" style="animation-delay: 0.4s;">
-            Modern, hızlı ve müşteri odaklı hizmetlerimizle tanışın. Sizin için en iyi deneyimi tasarlıyoruz.
-          </p>
+          <p id="hero-subtitle" class="mt-6 text-lg leading-8 text-text-muted animate-fade-in opacity-0" style="animation-delay: 0.3s;">
+            </p>
           
-          <div class="mt-10 flex items-center justify-center gap-x-6 animate-fade-in opacity-0" style="animation-delay: 0.6s;">
-            <a href="#services" class="rounded-md bg-primary px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-secondary focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 transition-all transform hover:scale-105">
-              Hizmetlerimiz
-            </a>
-            <a href="#about" class="text-sm font-semibold leading-6 text-text-main hover:text-primary transition-colors">
-              Hakkımızda <span aria-hidden="true">→</span>
+          <div class="mt-10 flex items-center justify-center gap-x-6 animate-fade-in opacity-0" style="animation-delay: 0.5s;">
+            <a id="hero-cta" href="#" class="rounded-md bg-primary px-3.5 py-2.5 text-sm font-semibold text-white shadow-lg shadow-primary/30 hover:bg-secondary focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary transition-all transform hover:-translate-y-1">
+              </a>
+            <a href="#contact" class="text-sm font-semibold leading-6 text-text-main hover:text-primary transition-colors group">
+              Bize Ulaşın <span aria-hidden="true" class="inline-block transition-transform group-hover:translate-x-1">→</span>
             </a>
           </div>
 
         </div>
       </div>
       
-      <div class="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]" aria-hidden="true">
-        <div class="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-primary to-accent opacity-20 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
+      <div class="absolute inset-0 -z-10 overflow-hidden">
+        <div class="absolute left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-primary/30 to-accent/30 opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem] blur-3xl"></div>
+        <div class="absolute right-[calc(50%-11rem)] top-[calc(100%-30rem)] aspect-[1155/678] w-[36.125rem] translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-secondary/30 to-primary/30 opacity-30 sm:right-[calc(50%-30rem)] sm:w-[72.1875rem] blur-3xl"></div>
       </div>
     </section>
-
-    <footer class="bg-white border-t border-gray-200 mt-20">
-      <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
-        <div class="sm:flex sm:items-center sm:justify-between">
-            <span class="text-sm text-text-muted sm:text-center">© 2026 <a href="#" class="hover:underline">Marka İsmi™</a>. Tüm Hakları Saklıdır.</span>
+    
+    <footer class="bg-surface border-t border-gray-100 mt-auto">
+      <div class="mx-auto w-full max-w-screen-xl p-4 py-8">
+        <div class="sm:flex sm:items-center sm:justify-between text-center sm:text-left">
+            <span class="text-sm text-text-muted">
+              © 2026 <span class="font-semibold text-primary">Çelikoğulları</span>. Tüm Hakları Saklıdır.
+            </span>
+            <ul class="flex flex-wrap items-center justify-center mt-3 text-sm font-medium text-text-muted sm:mt-0 gap-4">
+                <li><a href="#" class="hover:text-primary transition-colors">Gizlilik</a></li>
+                <li><a href="#" class="hover:text-primary transition-colors">Şartlar</a></li>
+                <li><a href="#" class="hover:text-primary transition-colors">İletişim</a></li>
+            </ul>
         </div>
       </div>
     </footer>
