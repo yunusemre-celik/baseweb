@@ -43,6 +43,10 @@
       }
     ]
   },
+  "reviews": {
+    "title": "What Our Customers Say?",
+    "subtitle": "Experiences of our valued customers who chose us."
+  },
   "contact": {
     "title": "Get in Touch",
     "subtitle": "Feel free to contact us for your projects or questions.",

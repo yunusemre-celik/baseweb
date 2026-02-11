@@ -43,6 +43,10 @@
       }
     ]
   },
+  "reviews": {
+    "title": "Müşterilerimiz Ne Diyor?",
+    "subtitle": "Bizi tercih eden değerli müşterilerimizin deneyimleri."
+  },
   "contact": {
     "title": "İletişime Geçin",
     "subtitle": "Projeleriniz veya sorularınız için bize ulaşmaktan çekinmeyin.",
