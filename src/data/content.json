@@ -11,6 +11,11 @@
     "address": "Örnek Mahallesi, Teknoloji Caddesi No:1, 34000 Şehir/Ülke",
     "mapEmbed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3009.664402324638!2d28.978358915414844!3d41.00823797929987!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab9e7a7777c43%3A0x4c76cf3dcc8b330d!2sAyasofya!5e0!3m2!1str!2str!4v1631526437542!5m2!1str!2str"
   },
+  "social": {
+    "instagram": "https://instagram.com/",
+    "facebook": "https://facebook.com/",
+    "googleMaps": "https://maps.google.com/"
+  },
   "hero": {
     "title": "İşletmeniz İçin <br><span class='text-primary'>Yenilikçi Çözümler</span>",
     "subtitle": "Müşterilerinize en iyi deneyimi sunmak için modern, hızlı ve güvenilir altyapımızı keşfedin. Sizin için buradayız.",
@@ -40,11 +45,11 @@
   },
   "contact": {
     "title": "İletişime Geçin",
-    "subtitle": "Sorularınız ve siparişleriniz için bize ulaşın.",
+    "subtitle": "Projeleriniz veya sorularınız için bize ulaşmaktan çekinmeyin.",
     "workingHours": {
       "title": "Çalışma Saatleri",
       "weekdays": "09:00 - 18:00",
-      "weekend": "10:00 - 15:00" 
+      "weekend": "10:00 - 15:00"
     }
   }
 }
