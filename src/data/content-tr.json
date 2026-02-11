@@ -45,7 +45,24 @@
   },
   "reviews": {
     "title": "Müşterilerimiz Ne Diyor?",
-    "subtitle": "Bizi tercih eden değerli müşterilerimizin deneyimleri."
+    "subtitle": "Bizi tercih eden değerli müşterilerimizin deneyimleri.",
+    "items": [
+      {
+        "name": "Ahmet Yılmaz",
+        "comment": "Hizmet kalitesi gerçekten çok yüksek. Beklentimin üzerinde bir sonuç aldım, ekibe teşekkürler.",
+        "stars": 5
+      },
+      {
+        "name": "Ayşe Demir",
+        "comment": "Çok ilgili ve profesyonel bir işletme. Sorunlarımıza hızlıca çözüm buldular.",
+        "stars": 5
+      },
+      {
+        "name": "Mehmet Kaya",
+        "comment": "Kesinlikle tavsiye ediyorum. Fiyat/performans açısından bölgedeki en iyisi.",
+        "stars": 4
+      }
+    ]
   },
   "contact": {
     "title": "İletişime Geçin",

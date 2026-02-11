@@ -45,7 +45,24 @@
   },
   "reviews": {
     "title": "What Our Customers Say?",
-    "subtitle": "Experiences of our valued customers who chose us."
+    "subtitle": "Experiences of our valued customers who chose us.",
+    "items": [
+      {
+        "name": "John Doe",
+        "comment": "The service quality is really high. I got a result above my expectations, thanks to the team.",
+        "stars": 5
+      },
+      {
+        "name": "Jane Smith",
+        "comment": "Very attentive and professional business. They found quick solutions to our problems.",
+        "stars": 5
+      },
+      {
+        "name": "Michael Brown",
+        "comment": "I definitely recommend it. The best in the region in terms of price/performance.",
+        "stars": 4
+      }
+    ]
   },
   "contact": {
     "title": "Get in Touch",
