@@ -1,0 +1,55 @@
+{
+  "meta": {
+    "title": "BrandName | Your Corporate Solution Partner",
+    "description": "The best digital solutions and professional services for your business."
+  },
+  "general": {
+    "brandName": "BrandName",
+    "whatsappNumber": "905555555555",
+    "phone": "+90 (555) 000 00 00",
+    "email": "info@brandname.com",
+    "address": "Sample District, Technology Ave No:1, 34000 City/Country",
+    "mapEmbed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3009.664402324638!2d28.978358915414844!3d41.00823797929987!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab9e7a7777c43%3A0x4c76cf3dcc8b330d!2sAyasofya!5e0!3m2!1str!2str!4v1631526437542!5m2!1str!2str"
+  },
+  "social": {
+    "instagram": "https://instagram.com/",
+    "facebook": "https://facebook.com/",
+    "googleMaps": "https://maps.google.com/"
+  },
+  "hero": {
+    "title": "Innovative Solutions <br><span class='text-primary'>For Your Business</span>",
+    "subtitle": "Discover our modern, fast, and reliable infrastructure to provide the best experience for your customers. We are here for you.",
+    "ctaText": "Discover Services",
+    "ctaLink": "#services"
+  },
+  "services": {
+    "title": "What Do We Offer?",
+    "subtitle": "Professional service packages tailored to your needs.",
+    "items": [
+      {
+        "icon": "🚀",
+        "title": "Fast Integration",
+        "desc": "Quick solutions that are fully compatible with your existing systems, requiring no installation."
+      },
+      {
+        "icon": "🛡️",
+        "title": "Secure Infrastructure",
+        "desc": "Your data is encrypted and safely stored according to industry standards."
+      },
+      {
+        "icon": "💡",
+        "title": "Creative Strategies",
+        "desc": "Modern design and marketing strategies that will make your brand stand out."
+      }
+    ]
+  },
+  "contact": {
+    "title": "Get in Touch",
+    "subtitle": "Feel free to contact us for your projects or questions.",
+    "workingHours": {
+      "title": "Working Hours",
+      "weekdays": "09:00 - 18:00",
+      "weekend": "10:00 - 15:00"
+    }
+  }
+}
