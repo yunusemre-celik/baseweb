@@ -6,7 +6,7 @@ async function loadContent() {
     const data = await response.json();
     renderPage(data);
   } catch (error) {
-    console.error(error);
+    console.error('Veri yüklenirken hata oluştu:', error);
   }
 }
 
@@ -55,6 +55,12 @@ function renderPage(data) {
   updateElement('contact-address', data.general.address);
   updateElement('contact-phone', data.general.phone);
   updateElement('contact-email', data.general.email);
+
+  if (data.contact.workingHours) {
+    updateElement('hours-title', data.contact.workingHours.title);
+    updateElement('hours-weekdays', `Hafta İçi: ${data.contact.workingHours.weekdays}`);
+    updateElement('hours-weekend', `Hafta Sonu: ${data.contact.workingHours.weekend}`);
+  }
 
   const mapFrame = document.getElementById('google-map');
   if (mapFrame) {

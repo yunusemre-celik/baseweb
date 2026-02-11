@@ -40,6 +40,11 @@
   },
   "contact": {
     "title": "İletişime Geçin",
-    "subtitle": "Projeleriniz veya sorularınız için bize ulaşmaktan çekinmeyin."
+    "subtitle": "Sorularınız ve siparişleriniz için bize ulaşın.",
+    "workingHours": {
+      "title": "Çalışma Saatleri",
+      "weekdays": "09:00 - 18:00",
+      "weekend": "10:00 - 15:00" 
+    }
   }
 }
