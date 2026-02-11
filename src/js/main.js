@@ -9,13 +9,19 @@ window.changeLanguage = function(lang) {
   currentLang = lang;
   localStorage.setItem('siteLang', lang); // Hafızaya kaydet
   
-  // HTML'deki statik menü yazılarını anlık güncelleme (İsteğe bağlı pürüzsüzlük için)
+  // HTML'deki statik menü yazılarını anlık güncelleme
   if(lang === 'en') {
     updateElement('nav-home', 'Home');
     updateElement('nav-services', 'Services');
     updateElement('nav-contact', 'Contact');
     updateElement('hero-contact-text', 'Contact Us');
     updateElement('footer-rights', 'All Rights Reserved.');
+  } else if(lang === 'ru') {
+    updateElement('nav-home', 'Главная');
+    updateElement('nav-services', 'Услуги');
+    updateElement('nav-contact', 'Контакты');
+    updateElement('hero-contact-text', 'Связаться с нами');
+    updateElement('footer-rights', 'Все права защищены.');
   } else {
     updateElement('nav-home', 'Ana Sayfa');
     updateElement('nav-services', 'Hizmetler');
@@ -78,9 +84,17 @@ function renderPage(data) {
   if (data.contact.workingHours) {
     updateElement('hours-title', data.contact.workingHours.title);
     
-    // Dil TR ise "Hafta İçi", EN ise boş bırak (Zaten JSON'da İngilizcesi var)
-    let prefixWeekdays = currentLang === 'tr' ? 'Hafta İçi: ' : '';
-    let prefixWeekend = currentLang === 'tr' ? 'Hafta Sonu: ' : '';
+    // Dillere göre ön ekleri (Hafta İçi / Hafta Sonu) ayarlama
+    let prefixWeekdays = '';
+    let prefixWeekend = '';
+    
+    if (currentLang === 'tr') {
+      prefixWeekdays = 'Hafta İçi: ';
+      prefixWeekend = 'Hafta Sonu: ';
+    } else if (currentLang === 'ru') {
+      prefixWeekdays = 'Будни: ';
+      prefixWeekend = 'Выходные: ';
+    }
     
     updateElement('hours-weekdays', `${prefixWeekdays}${data.contact.workingHours.weekdays}`);
     updateElement('hours-weekend', `${prefixWeekend}${data.contact.workingHours.weekend}`);
@@ -121,7 +135,6 @@ function updateElement(id, content, isHTML = false) {
 }
 
 function addFloatingButtons(waNumber, igLink) {
-  // Eski butonları temizle (Dil değişince çoğalmasını engeller)
   let container = document.getElementById('floating-buttons-container');
   if (container) {
     container.remove();
@@ -164,9 +177,8 @@ function initMobileMenu() {
 document.addEventListener('DOMContentLoaded', () => {
   initMobileMenu();
   
-  // İlk açılışta sayfayı seçili dile göre ayarla
-  if(currentLang === 'en') {
-    changeLanguage('en');
+  if(currentLang === 'en' || currentLang === 'ru') {
+    changeLanguage(currentLang);
   } else {
     loadContent();
   }
